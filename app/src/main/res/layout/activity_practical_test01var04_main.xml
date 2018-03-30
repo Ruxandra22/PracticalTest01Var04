@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ro.pub.cs.systems.eim.practicaltest01var04.PracticalTest01var04MainActivity">
+
+
+    <Button
+        android:id="@+id/navigate_to_secondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Navigate to secondary activity" />
+
+    <Button
+        android:id="@+id/top_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/navigate_to_secondary"
+        android:layout_marginTop="35dp"
+        android:layout_toLeftOf="@+id/navigate_to_secondary"
+        android:layout_toStartOf="@+id/navigate_to_secondary"
+        android:text="top left" />
+
+    <Button
+        android:id="@+id/top_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/top_left"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:text="top right" />
+
+    <Button
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_right"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:text="center" />
+
+    <Button
+        android:id="@+id/bottom_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/top_left"
+        android:layout_alignStart="@+id/top_left"
+        android:layout_below="@+id/center"
+        android:layout_marginTop="33dp"
+        android:text="bottom left" />
+
+    <Button
+        android:id="@+id/bottom_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bottom_left"
+        android:layout_alignEnd="@+id/top_right"
+        android:layout_alignRight="@+id/top_right"
+        android:text="bottom right" />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bottom_left"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/bottom_left"
+        android:layout_marginBottom="47dp"
+        android:saveEnabled="false"
+        />
+
+
+</RelativeLayout>
